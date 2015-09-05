@@ -1,2 +1,0 @@
-# Calculator
-A polinomial calculator
