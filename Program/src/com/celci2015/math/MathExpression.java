@@ -13,6 +13,10 @@ public class MathExpression {
         tuples = Processor.convertExpression(expression);
         simplify();
     }
+    public MathExpression(ArrayList<Tuple> tupleArrayList) throws Exception {
+        tuples = tupleArrayList;
+        simplify();
+    }
 
     public int eval(int x , int y)
     {
@@ -23,6 +27,15 @@ public class MathExpression {
         return result;
     }
 
+    public void add(MathExpression toSum)
+    {
+        ArrayList<Tuple> tuplesToSum = toSum.getTuples();
+        for (Tuple tuple : tuplesToSum)
+        {
+            tuples.add(tuple);
+        }
+        simplify();
+    }
     private void simplify()
     {
         if (tuples.size() == 0) return;
@@ -49,10 +62,10 @@ public class MathExpression {
              * from right side which is less then the pivot value. Once the search
              * is done, then we exchange both numbers.
              */
-            while (tuples.get(i).getValue() < pivot.getValue()) {
+            while (tuples.get(i).getValue() > pivot.getValue()) {
                 i++;
             }
-            while (tuples.get(j).getValue() > pivot.getValue()) {
+            while (tuples.get(j).getValue() < pivot.getValue()) {
                 j--;
             }
             if (i <= j) {
@@ -100,6 +113,11 @@ public class MathExpression {
         }
         return false;
     }
+
+    public ArrayList<Tuple> getTuples() {
+        return tuples;
+    }
+
     @Override
     public String toString() {
         String result = "";

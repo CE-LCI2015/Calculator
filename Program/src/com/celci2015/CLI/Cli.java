@@ -7,14 +7,9 @@ import java.util.Scanner;
 /**
  * Created by pablo on 07/09/15.
  */
-public class Cli implements UserInterface{
+public class Cli extends UserInterface{
 
 
-
-    public static final String expressionPattern = "(-\\d+|\\d+)\\ (-\\d+|\\d+)\\ (-\\d+|\\d+)(\\|(-\\d+|\\d+)\\ (-\\d+|\\d+)\\ (-\\d+|\\d+))*" +
-            "\\ [+*-/]\\ " +
-            "(-\\d+|\\d+)\\ (-\\d+|\\d+)\\ (-\\d+|\\d+)(\\|(-\\d+|\\d+)\\ (-\\d+|\\d+)\\ (-\\d+|\\d+))*";
-    public static final String BAD_INPUT = "Bad input!";
 
     private final Scanner reader;
 
@@ -29,7 +24,7 @@ public class Cli implements UserInterface{
                 continue;
 
             }
-            else query(input);
+            else System.out.println(query(input));
         }
     }
 
@@ -38,8 +33,4 @@ public class Cli implements UserInterface{
 
     }
 
-    @Override
-    public void query(String queryString) {
-
-    }
 }
