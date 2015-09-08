@@ -6,4 +6,5 @@ package com.celci2015;
 public interface UserInterface {
 
     public void display (String result);
+    public void query(String queryString);
 }
