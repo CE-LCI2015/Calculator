@@ -27,6 +27,11 @@ public class MathExpression {
     {
         if (tuples.size() == 0) return;
         quickSort(0, tuples.size() - 1);
+        int i = 1;
+        while (i<tuples.size())
+        {
+                analyzeEquals(i-1,i);
+        }
 
     }
 
@@ -56,10 +61,7 @@ public class MathExpression {
                 i++;
                 j--;
             }
-            else
-            {
-                analyzeEquals(i,j);
-            }
+
         }
         // call quickSort() method recursively
         if (lowerIndex < j)
@@ -69,12 +71,11 @@ public class MathExpression {
 
     }
     private void exchangeTuples(int i, int j) {
-
-        if(!analyzeEquals(i,j)){
+        if(i==j) return;
             Tuple temp = tuples.get(i);
             tuples.set(i, tuples.get(j));
             tuples.set(j, temp);
-        }
+
     }
 
     /**
