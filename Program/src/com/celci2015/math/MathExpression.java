@@ -36,6 +36,33 @@ public class MathExpression {
         }
         simplify();
     }
+
+    public void minus(MathExpression toSum)
+    {
+        ArrayList<Tuple> tuplesToSum = toSum.getTuples();
+        for (Tuple tuple : tuplesToSum)
+        {
+            tuple.setMultiplier(tuple.getMultiplier() * -1);
+            tuples.add(tuple);
+        }
+        simplify();
+    }
+    public void times(MathExpression toMul)
+    {
+        ArrayList<Tuple> tuplesToMul = toMul.getTuples();
+        ArrayList<Tuple> tuplesNew = new ArrayList<Tuple>();
+        for (Tuple tupleMult : tuplesToMul)
+        {
+            for (Tuple tuple : tuples)
+            {
+                tuplesNew.add(new Tuple(tupleMult.getMultiplier()*tuple.getMultiplier(),
+                        tupleMult.getxExponent()+tuple.getxExponent(),
+                        tupleMult.getyExponent()+tuple.getyExponent()));
+            }
+        }
+        tuples = tuplesNew;
+        simplify();
+    }
     private void simplify()
     {
         if (tuples.size() == 0) return;
@@ -43,7 +70,8 @@ public class MathExpression {
         int i = 1;
         while (i<tuples.size())
         {
-                analyzeEquals(i-1,i);
+            analyzeEquals(i-1,i);
+            i++;
         }
 
     }
