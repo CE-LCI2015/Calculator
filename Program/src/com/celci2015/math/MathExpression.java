@@ -150,8 +150,9 @@ public class MathExpression {
     public String toString() {
         String result = "";
         for (Tuple tuple :tuples) {
-                result+= tuple.getMultiplier() + " " + tuple.getxExponent() + " " + tuple.getyExponent()+"|";
+                result+= tuple.getMultiplier() + " " + tuple.getxExponent() + " " + tuple.getyExponent()+" | ";
         }
-        return result.substring(0,result.length()-1);
+        if (result.length()==0) return "0 0 0";
+        return result.substring(0,result.length()-2);
     }
 }

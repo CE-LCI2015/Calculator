@@ -9,28 +9,24 @@ import java.util.Scanner;
  */
 public class Cli extends UserInterface{
 
+    public Cli(String [] args)
+    {
+        String input;
+        input = args[0]+ " " + args[1] + " " + args[2];
 
-
-    private final Scanner reader;
-
-    public Cli() {
-        reader = new Scanner(System.in);
-        while(true)
-        {
-            String input = reader.nextLine();
             if (!input.matches(expressionPattern))
             {
-                System.out.println(BAD_INPUT);
-                continue;
+                System.out.println(BAD_INPUT + "!");
+
 
             }
-            else System.out.println(query(input));
-        }
+            else query(input);
+
     }
 
     @Override
     public void display(String result) {
-
+        System.out.println(result);
     }
 
 }

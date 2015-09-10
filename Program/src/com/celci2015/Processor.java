@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
  */
 public class Processor {
 
-    public static final String expressionPattern = "(-\\d+|\\d+)\\ (-\\d+|\\d+)\\ (-\\d+|\\d+)(\\|(-\\d+|\\d+)\\ (-\\d+|\\d+)\\ (-\\d+|\\d+))*";
+    public static final String expressionPattern = "(-\\d+|\\d+)\\ (-\\d+|\\d+)\\ (-\\d+|\\d+)(\\ \\|\\ (-\\d+|\\d+)\\ (-\\d+|\\d+)\\ (-\\d+|\\d+))*";
     /**
      * Separate string and convert it to a Class Math Expression
      * @param exp the string from the user interface
@@ -22,6 +22,7 @@ public class Processor {
         if (!exp.matches(expressionPattern)) throw new Exception("WRONG EXPRESSION PATTERN");
         ArrayList<Tuple> result = new ArrayList<Tuple>();
         for (String s :  exp.split("\\|")){
+            if (s.charAt(0)==' ') s = s.substring(1);
             String[] numbers = s.split(" ");
             Tuple tuple = new Tuple(Integer.parseInt(numbers[0]),Integer.parseInt(numbers[1]),Integer.parseInt(numbers[2]));
             result.add(tuple);
