@@ -11,12 +11,13 @@ public class Cli extends UserInterface{
 
     public Cli(String [] args)
     {
+        if(args.length!=3) display("Error: insufficient arguments");
         String input;
         input = args[0]+ " " + args[1] + " " + args[2];
 
             if (!input.matches(expressionPattern))
             {
-                System.out.println(BAD_INPUT + "!");
+                display(BAD_INPUT + " : " + input);
 
 
             }
