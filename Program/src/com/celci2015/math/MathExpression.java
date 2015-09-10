@@ -153,6 +153,7 @@ public class MathExpression {
                 result+= tuple.getMultiplier() + " " + tuple.getxExponent() + " " + tuple.getyExponent()+" | ";
         }
         if (result.length()==0) return "0 0 0";
-        return result.substring(0,result.length()-2);
+        String finalStr = result.substring(0,result.length()-3);
+        return finalStr;
     }
 }

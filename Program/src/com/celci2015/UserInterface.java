@@ -14,6 +14,15 @@ public abstract class UserInterface {
     public abstract void display(String result);
     public void query(String queryString)
     {
+        if (!queryString.matches(expressionPattern)) {
+            if (queryString.matches(Processor.expressionPattern))
+            {
+                display(queryString);
+              return;
+            }
+            display(BAD_INPUT);
+            return;
+        }
         String[] inputs = queryString.split(OPERATION);
         MathExpression expression;
         try{
