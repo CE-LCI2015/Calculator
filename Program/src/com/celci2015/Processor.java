@@ -15,6 +15,7 @@ public class Processor {
     public static final String expressionPattern = "(-\\d+|\\d+)\\ (-\\d+|\\d+)\\ (-\\d+|\\d+)(\\ \\|\\ (-\\d+|\\d+)\\ (-\\d+|\\d+)\\ (-\\d+|\\d+))*";
     /**
      * Separate string and convert it to a Class Math Expression
+     * Iterating through the splited strings and creating tuples
      * @param exp the string from the user interface
      * @return
      */
