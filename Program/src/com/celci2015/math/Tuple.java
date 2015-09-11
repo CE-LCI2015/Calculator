@@ -2,6 +2,7 @@ package com.celci2015.math;
 
 /**
  * Created by pablo on 9/7/15.
+ * This tuple has the three values of the polynom and its getters and setters
  */
 public class Tuple {
     private int multiplier;
