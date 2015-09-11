@@ -6,6 +6,10 @@ import java.util.ArrayList;
 
 /**
  * Created by pablo on 9/7/15.
+ * Class represented as # # # | # # # | # # # | .....
+ * Each # # # is a tuple
+ * For example : 1 2 3 | 4 5 6 would be a Math expression and its List of Tuple would be length 2.
+ * The tuples would be 1 2 3 and 4 5 6.
  */
 public class MathExpression {
     private ArrayList<Tuple> tuples;
@@ -26,7 +30,10 @@ public class MathExpression {
         }
         return result;
     }
-
+    /**
+     * This works adding the toSum tuples to the object ones and then simplifying.
+     * @param toSum tuples to sum
+     */
     public void add(MathExpression toSum)
     {
         ArrayList<Tuple> tuplesToSum = toSum.getTuples();
@@ -36,7 +43,9 @@ public class MathExpression {
         }
         simplify();
     }
-
+    /*
+     * As adds but multiplies each tuple with -1
+     */
     public void minus(MathExpression toSum)
     {
         ArrayList<Tuple> tuplesToSum = toSum.getTuples();
@@ -47,6 +56,10 @@ public class MathExpression {
         }
         simplify();
     }
+    /**
+     * With two "for"s we iterate through all the possible combinatios of tuples and multiplying and adding to
+     * another list of tuples makes almost all of the work. THen we just simplify the new list of tuples.
+     */
     public void times(MathExpression toMul)
     {
         ArrayList<Tuple> tuplesToMul = toMul.getTuples();
@@ -63,6 +76,11 @@ public class MathExpression {
         tuples = tuplesNew;
         simplify();
     }
+    /**
+     * Sorts the tuples of list making that similar tuples will be next each other
+     * Then we just review the sorted list looking for equal terms to add them and deleting the other.
+     * If the result is 0 we remove both in analyze equals
+     */
     private void simplify()
     {
         if (tuples.size() == 0) return;
@@ -75,7 +93,9 @@ public class MathExpression {
         }
 
     }
-
+/**
+ * Classical QuickSortmodified with tuples.
+ */
     private void quickSort(int lowerIndex, int higherIndex)
     {
         int i = lowerIndex;
@@ -111,6 +131,9 @@ public class MathExpression {
             quickSort(i, higherIndex);
 
     }
+    /**
+     * Swap tuples
+     */
     private void exchangeTuples(int i, int j) {
         if(i==j) return;
             Tuple temp = tuples.get(i);
@@ -121,9 +144,10 @@ public class MathExpression {
 
     /**
      * Analyzes if two tuples have the same grade of x and y.
+     * Erases the necessary tuples.
      * @param i position of first tuple;
      * @param j position of second tuple;
-     * @return
+     * @return if they where equals
      */
     private boolean analyzeEquals (int i, int j)
     {
@@ -145,7 +169,9 @@ public class MathExpression {
     public ArrayList<Tuple> getTuples() {
         return tuples;
     }
-
+/**
+ * Output to the user as String
+ */
     @Override
     public String toString() {
         String result = "";
