@@ -101,5 +101,5 @@ Chart 2. Pablo Rodriguez's timesheet.
 | Writing documentation       |    2h   | Internal Documentation and External |
 
 ## References
-* http://java2novice.com/java-sorting-algorithms/quick-sort/
-* http://stackoverflow.com/questions/12700497/how-to-concatenate-two-integers-in-c
+* "Program: Implement Quick Sort in Java." Implement Quick Sort in Java. N.p., n.d. Web. 12 Sept. 2015.  http://java2novice.com/java-sorting-algorithms/quick-sort/
+* "How to Concatenate Two Integers in Java." Math. N.p., n.d. Web. 12 Sept. 2015.  http://stackoverflow.com/questions/12700497/how-to-concatenate-two-integers-in-c
