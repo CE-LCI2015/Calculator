@@ -23,23 +23,23 @@ To develop a polynomial calculator, using Object Oriented Paradigm, that allows 
 
 ##User guide
 
--To run the user interface, excecute the following command:
+- To run the user interface, excecute the following command:
 
--To insert a polynom with N terms, use the following sintax:
+- To insert a polynom with N terms, use the following sintax:
 
   P(x,y) = coefficient<sub>0</sub> Order(x)<sub>0</sub> Order(y)<sub>0</sub> | ... | coefficient<sub>N-1</sub> Order(x)<sub>N-1</sub> Order(y)<sub>N-1</sub>
 
--You can add pressing "+".
+- You can add pressing "+".
 
--You can sustract pressing "-".
+- You can sustract pressing "-".
 
--You can multiply pressing "*".
+- You can multiply pressing "*".
 
--You can evaluate pressing "e"
+- You can evaluate pressing "e"
 
--You can delete all pressing "D"
+- You can delete all pressing "D"
 
--You can delete text pressing "C"
+- You can delete text pressing "C"
 
 ##Development envioronment
 
@@ -66,10 +66,10 @@ The requirements has been performed successfully.
 
 ##Conclusions
 
--The Object Oriented Paradigm increases the productivity of the programmer.
--The Object Oriented Paradigm provides tools to generate abstract, undestandable, modular, polymorphic and reusable.
--To solve mathematical problems with programming languages increases the knowledge.
--The Object Oriented Paradigm could slower because there is a tendency to spend more memory. 
+- The Object Oriented Paradigm increases the productivity of the programmer.
+- The Object Oriented Paradigm provides tools to generate abstract, undestandable, modular, polymorphic and reusable.
+- To solve mathematical problems with programming languages increases the knowledge.
+- The Object Oriented Paradigm could slower because there is a tendency to spend more memory. 
 
 ##Suggestions and recommendations
 
