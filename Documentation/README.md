@@ -51,11 +51,14 @@ To develop a polynomial calculator, using Object Oriented Paradigm, that allows 
 
 ##Program design
 
-Addition: reicieves two polynoms and adds the coefficient of the terms with the same order on the two variables.
-Reduction: reicieves a polynom and applies an addition to it's terms, in other words, returns the polynom without terms presenting the same order.
+-Addition: reicieves two polynoms and adds the coefficient of the terms with the same order on the two variables.
+
+-Reduction: reicieves a polynom and applies an addition to it's terms, in other words, returns the polynom without terms presenting the same order.
 Substraction: reicieves two polynoms and substract the coefficient of the terms with the same order. The first polynom is minuend the and the second the subtrahend.
-Multiplication: reicieves two polynoms, multiplies every term of the first with every term of the second and reducts the result. To multiply two terms, the coefficient is multiplied and the orders of the same variables is added.
-Evaluation: reicives a polynom and the value of it's two variables and performs the operation to get the scalar result of the expression.
+
+-Multiplication: reicieves two polynoms, multiplies every term of the first with every term of the second and reducts the result. To multiply two terms, the coefficient is multiplied and the orders of the same variables is added.
+
+-Evaluation: reicives a polynom and the value of it's two variables and performs the operation to get the scalar result of the expression.
 
 ##Project final status
 
