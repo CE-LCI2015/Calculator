@@ -25,8 +25,9 @@ To develop a polynomial calculator, using Object Oriented Paradigm, that allows 
 
 ##User guide
 
+You need to have installed Java 1.7 in order to run the program.
 - To run the user interface, excecute the following command:
-
+![Command](http://s14.postimg.org/qdz4teycx/cmd.png)
 - To insert a polynom with N terms, use the following sintax:
 
   P(x,y) = coefficient<sub>0</sub> Order(x)<sub>0</sub> Order(y)<sub>0</sub> | ... | coefficient<sub>N-1</sub> Order(x)<sub>N-1</sub> Order(y)<sub>N-1</sub>
@@ -55,6 +56,9 @@ To develop a polynomial calculator, using Object Oriented Paradigm, that allows 
 
 -Addition: reicieves two polynoms and adds the coefficient of the terms with the same order on the two variables.
 
+![Add0](http://s1.postimg.org/vlne85wrj/Screenshot_from_2015_09_11_23_42_03.png)
+![Add1](http://s11.postimg.org/85k22iolf/Screenshot_from_2015_09_11_23_42_30.png)
+![Add2](http://s22.postimg.org/nqed22569/Screenshot_from_2015_09_11_23_42_48.png)
 -Reduction: reicieves a polynom and applies an addition to it's terms, in other words, returns the polynom without terms presenting the same order.
 Substraction: reicieves two polynoms and substract the coefficient of the terms with the same order. The first polynom is minuend the and the second the subtrahend.
 
