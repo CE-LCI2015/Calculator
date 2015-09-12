@@ -89,8 +89,12 @@ Chart 1. Roberto Bonilla's timesheet.
 
 Chart 2. Pablo Rodriguez's timesheet.
 
-| Activity                    | Time(h) |
-|:---------------------------:|:-------:|
+| Activity                    | Time(h) | Description |
+|:---------------------------:|:-------:|:-----------:|
+| Planning                    |    2h   | Meeting with Roberto |
+| Writing code                |    5h   | Making Math Expression Class and the Gui Form |
+| Writing code                |    1h   | Debugging |
+| Writing documentation       |    2h   | Internal Documentation and External |
 
 ## References
 * http://java2novice.com/java-sorting-algorithms/quick-sort/

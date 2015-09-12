@@ -97,7 +97,7 @@ public class CalculatorInterface extends UserInterface {
                 input.setText(input.getText() + "9");
             }
         });
-        minusButton.addActionListener(new ActionListener() {
+        negativeButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
                 input.setText(input.getText() + "-");
 
@@ -135,12 +135,12 @@ public class CalculatorInterface extends UserInterface {
         });
         cButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
+                first = ""; operator = "";
                 input.setText("");
             }
         });
         dButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent actionEvent) {
-                first = ""; operator = "";
                 input.setText("");
             }
         });
@@ -161,6 +161,7 @@ public class CalculatorInterface extends UserInterface {
         if (!first.matches(Processor.expressionPattern))
         {
             display("Expression doesn't match pattern");
+            return;
         }
         input.setText("");
     }
