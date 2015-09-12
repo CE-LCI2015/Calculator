@@ -34,15 +34,15 @@ You need to have installed Java 1.7 in order to run the program.
 
 - You can add pressing "+".
 
-- You can sustract pressing "-".
+- You can sustract pressing "(-)".
 
 - You can multiply pressing "*".
 
-- You can evaluate pressing "e"
+- You can evaluate pressing "e".
 
-- You can delete all pressing "D"
+- You can delete all pressing "D".
 
-- You can delete text pressing "C"
+- You can delete text pressing "C".
 
 ##Development envioronment
 
