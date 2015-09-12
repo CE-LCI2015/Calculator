@@ -1,12 +1,13 @@
 # COSTA RICA INSTITUTE OF TECHNOLOGY
 
-**- Computer Engineering**
+** - Computer Engineering**
 
-**- Programming Languages, Compilers and Interpreters**
+** - Programming Languages, Compilers and Interpreters**
 
-**- Polynomial Calculator**
+** - Polynomial Calculator**
 
-**- Project by: Roberto Bonilla and Pablo Rodríguez**
+** - Project by: Roberto Bonilla and Pablo Rodríguez**
+
 
 
 
