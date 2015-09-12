@@ -33,15 +33,15 @@ To develop a polynomial calculator, using Object Oriented Paradigm, that allows 
 
 - You can add pressing "+".
 
-- You can sustract pressing "-".
+- You can sustract pressing "(-)".
 
 - You can multiply pressing "*".
 
-- You can evaluate pressing "e"
+- You can evaluate pressing "e".
 
-- You can delete all pressing "D"
+- You can delete all pressing "D".
 
-- You can delete text pressing "C"
+- You can delete text pressing "C".
 
 ##Development envioronment
 
