@@ -62,7 +62,7 @@ Substraction: reicieves two polynoms and substract the coefficient of the terms 
 
 ##Project final status
 
-	The requirements has been performed successfully.
+The requirements has been performed successfully.
 
 ##Conclusions
 
