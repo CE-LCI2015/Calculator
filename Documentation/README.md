@@ -15,11 +15,11 @@
 
 ##Introduction
 
-	Nowadays, it's common to use polynoms in every area. Math is everywhere, and calculators helps to get correct results easier. But the calculators does not appear from nothing, an engineer has to do them. One of the options is the Object Oriented Paradigm, because the object abstraction makes easier the data structure management and the modular programming.
+Nowadays, it's common to use polynoms in every area. Math is everywhere, and calculators helps to get correct results easier. But the calculators does not appear from nothing, an engineer has to do them. One of the options is the Object Oriented Paradigm, because the object abstraction makes easier the data structure management and the modular programming.
 
 ##Problem description
 
-	To develop a polynomial calculator, using Object Oriented Paradigm, that allows to perform mathematical operations on a friendly environment. It has to be able to add, substract and multiply two polynoms of two variables of any order.
+To develop a polynomial calculator, using Object Oriented Paradigm, that allows to perform mathematical operations on a friendly environment. It has to be able to add, substract and multiply two polynoms of two variables of any order.
 
 ##User guide
 
